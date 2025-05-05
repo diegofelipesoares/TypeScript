@@ -43,3 +43,17 @@ function teste( ): string | number {
     return 10;
 }
 
+// <<< -------------------------------------- >>>
+
+//TIPAGEM EM MÉTODOS DE OBJETOS
+// Definindo uma classe para conter o método
+class Saudacao {
+    //método que retorna uma string
+    dizOla(): string {
+        return "Olá, tudo bem?";
+    }
+}
+
+// Exemplo de uso
+const saudacao = new Saudacao();
+console.log(saudacao.dizOla());
